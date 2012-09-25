@@ -1,0 +1,24 @@
+include_directories(${FriLibrary_SOURCE_DIR}/include)
+
+add_library(FastResearchInterface
+    ../LinuxAbstraction/LinuxAbstraction.cpp
+    Console.cpp
+    DataLogging.cpp
+    FastResearchInterface.cpp
+    friudp.cpp
+    GetCompleteRobotStateAndInformation.cpp
+    GetRobotControlData.cpp
+    GetRobotStatusData.cpp
+    GetUDPCommunicationData.cpp
+    InitializationFileEntry.cpp
+    KRCCommunicationThreadMain.cpp
+    LoggingMethods.cpp
+    ReadInitFile.cpp
+    SetControlScheme.cpp
+    SetRobotControlData.cpp
+    SetRobotStatusData.cpp
+    StartRobot.cpp
+    StopRobot.cpp
+    TimerThreadMain.cpp
+    WaitForTicks.cpp
+)

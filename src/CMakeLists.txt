@@ -1,0 +1,4 @@
+add_subdirectory(TypeIRML)
+add_subdirectory(FastResearchInterfaceLibrary)
+add_subdirectory(LWRGettingStartedExamples)
+add_subdirectory(FastResearchInterfaceTest)

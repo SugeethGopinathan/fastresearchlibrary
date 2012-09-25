@@ -1,0 +1,14 @@
+include_directories (${FriLibrary_SOURCE_DIR}/include)
+link_directories(${FriLibrary_BINARY_DIR}/FastResearchInterface)
+
+add_executable(LWRCartImpedanceControlExample LWRCartImpedanceControlExample.cpp)
+target_link_libraries(LWRCartImpedanceControlExample TypeIRML FastResearchInterface ${LIBRARIES})
+
+add_executable(LWRJointImpedanceControlExample LWRJointImpedanceControlExample.cpp)
+target_link_libraries(LWRJointImpedanceControlExample TypeIRML FastResearchInterface ${LIBRARIES})
+
+add_executable(LWRJointPositionControlExample LWRJointPositionControlExample.cpp)
+target_link_libraries(LWRJointPositionControlExample TypeIRML FastResearchInterface ${LIBRARIES})
+
+add_executable(LWRLoggingExample LWRLoggingExample.cpp)
+target_link_libraries(LWRLoggingExample TypeIRML FastResearchInterface ${LIBRARIES})
